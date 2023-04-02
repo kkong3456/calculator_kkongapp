@@ -112,4 +112,4 @@ flutter:
         - asset: assets/fonts/Inter-ExtraBold.ttf
           weight: 800
         - asset: assets/fonts/Inter-Black.ttf
-          wegith: 900
+          weight: 900
