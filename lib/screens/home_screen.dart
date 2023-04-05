@@ -1,5 +1,13 @@
 import 'package:calculator_kkongapp/providers/calculation_provider.dart';
 import 'package:calculator_kkongapp/providers/history_provider.dart';
+import 'package:calculator_kkongapp/widgets/button_grid_widget.dart';
+import 'package:calculator_kkongapp/widgets/custom_icon_widget.dart';
+import 'package:calculator_kkongapp/widgets/custome_switch_widget.dart';
+import 'package:calculator_kkongapp/widgets/gradient_divider_widget.dart';
+import 'package:calculator_kkongapp/widgets/input_feild_widget.dart';
+import 'package:calculator_kkongapp/widgets/last_answer_widget.dart';
+import 'package:calculator_kkongapp/widgets/responsive_widget.dart';
+import 'package:calculator_kkongapp/widgets/switch_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -7,15 +15,8 @@ import 'package:provider/provider.dart';
 import '../core/index.dart';
 
 import '../widgets/answer_text.dart';
-import '../widgets/buttons_grid.dart';
+
 import '../widgets/custom_animated_switcher.dart';
-import '../widgets/custom_icon.dart';
-import '../widgets/custom_switch.dart';
-import '../widgets/gradient_divider.dart';
-import '../widgets/input_feild.dart';
-import '../widgets/last_answer.dart';
-import '../widgets/responsive.dart';
-import '../widgets/switch_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
