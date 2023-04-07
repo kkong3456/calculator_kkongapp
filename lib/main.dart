@@ -1,5 +1,6 @@
 import 'package:calculator_kkongapp/core/app_theme.dart';
 import 'package:calculator_kkongapp/providers/calculation_provider.dart';
+import 'package:calculator_kkongapp/providers/history_provider.dart';
 import 'package:calculator_kkongapp/providers/theme_provider.dart';
 import 'package:calculator_kkongapp/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ Future<void> main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => Calculations()),
-        // ChangeNotifierProvider(create: (_) => History()),
+        ChangeNotifierProvider(create: (_) => History()),
         ChangeNotifierProvider(create: (_) => ThemeProvider(themeMode)),
       ],
       child: const MyApp(),

@@ -3,6 +3,7 @@ import 'package:calculator_kkongapp/providers/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+//밝게/어둡게
 class SwitchText extends StatelessWidget {
   const SwitchText({super.key});
 

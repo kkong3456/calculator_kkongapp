@@ -6,7 +6,7 @@ class ThemeProvider with ChangeNotifier {
   ThemeMode themeMode;
 
   String switchToText(BuildContext context) {
-    return 'Swith to ${Theme.of(context).brightness == Brightness.dark ? 'Light' : 'Dark'}';
+    return '${Theme.of(context).brightness == Brightness.dark ? '밝게' : '어둡게'}';
   }
 
   Future<void> toggleTheme(bool newValue) async {

@@ -74,17 +74,17 @@ class HomeScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
                           CustomSwitch(),
-                          SwitchText(),
+                          SwitchText(), //밝게/어둡게
                         ],
                       ),
                     ),
                     Expanded(
                       child: Column(
                         children: [
-                          const Expanded(flex: 5, child: InputFeild()),
+                          const Expanded(flex: 5, child: InputFeild()), //입력화면
                           Expanded(
                               flex: isLandscape ? 4 : 2,
-                              child: const AnswerText()),
+                              child: const AnswerText()), //결과 화면
                         ],
                       ),
                     ),
@@ -103,6 +103,7 @@ class HomeScreen extends StatelessWidget {
               const Expanded(flex: 2, child: AnswerText()),
             ],
             if (!isLandscape) const SizedBox(height: 5),
+            //divider start
             const GradientDivider(),
             Expanded(
               flex: isLandscape ? 14 : 12,
@@ -142,7 +143,9 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    if (!isLandscape) const SizedBox(height: 5),
+
+                    // 입력자판 시작
+                    if (!isLandscape) const SizedBox(height: 15),
                     Expanded(
                       child: Responsive(
                         portrait: Row(
@@ -161,16 +164,17 @@ class HomeScreen extends StatelessWidget {
                         landscape: Row(
                           children: [
                             Expanded(
-                              flex: 3,
+                              flex: 38,
                               child: CustomAnimatedSwitcher(
                                 grid: ButtonsGrid(grid: lGrid),
                               ),
                             ),
                             const Expanded(
-                              flex: 3,
+                              flex: 30,
                               child: ButtonsGrid(grid: AppConstant.grid),
                             ),
                             const Expanded(
+                              flex: 10,
                               child: ButtonsGrid(grid: AppConstant.opGrid),
                             ),
                           ],

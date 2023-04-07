@@ -34,7 +34,7 @@ class Calculations with ChangeNotifier {
       if (eval.toInt() == eval) return eval.toInt().toString().toUpperCase();
       return eval.toString().toUpperCase();
     } catch (e) {
-      return '';
+      return '?';
     }
   }
 

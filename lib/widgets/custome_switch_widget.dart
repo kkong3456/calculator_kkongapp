@@ -3,6 +3,7 @@ import 'package:calculator_kkongapp/providers/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+//맨위,왼쪽 배경색 스위치 위젯
 class CustomSwitch extends StatelessWidget {
   const CustomSwitch({super.key});
 
@@ -21,7 +22,7 @@ class CustomSwitch extends StatelessWidget {
         height: 23,
         width: 65,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(15),
           gradient: colorScheme.gradient,
         ),
         child: AnimatedAlign(

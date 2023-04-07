@@ -3,6 +3,7 @@ import 'package:calculator_kkongapp/providers/calculation_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+//입력칸, 계산입력칸
 class InputFeild extends StatefulWidget {
   const InputFeild({super.key});
 
@@ -30,30 +31,31 @@ class _InputFeildState extends State<InputFeild> {
             thumbVisibility: true,
             radius: const Radius.circular(20),
             child: TextField(
-                maxLines: isLandscape ? 1 : null,
-                expands: !isLandscape,
-                showCursor: true,
-                readOnly: true,
-                autofocus: true,
-                controller: calc.controller,
-                focusNode: calc.focusNode,
-                scrollController: calc.scrollController,
-                scrollPadding: const EdgeInsets.all(3),
-                textAlign: TextAlign.end,
-                decoration: const InputDecoration(
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                  border: OutlineInputBorder(borderSide: BorderSide.none),
-                ),
-                cursorColor: theme.colorScheme.cursor,
-                cursorWidth: 4,
-                cursorRadius: const Radius.circular(20),
-                style: TextStyle(
-                  fontSize: value,
-                  color: calc.isShowingResult
-                      ? theme.colorScheme.switchText
-                      : theme.colorScheme.onBackground,
-                )),
+              maxLines: isLandscape ? 1 : null,
+              expands: !isLandscape,
+              showCursor: true,
+              readOnly: true,
+              autofocus: true,
+              controller: calc.controller,
+              focusNode: calc.focusNode,
+              scrollController: calc.scrollController,
+              scrollPadding: const EdgeInsets.all(3),
+              textAlign: TextAlign.end,
+              decoration: const InputDecoration(
+                contentPadding:
+                    EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                border: OutlineInputBorder(borderSide: BorderSide.none),
+              ),
+              cursorColor: theme.colorScheme.cursor,
+              cursorWidth: 6,
+              cursorRadius: const Radius.circular(20),
+              style: TextStyle(
+                fontSize: value,
+                color: calc.isShowingResult
+                    ? theme.colorScheme.switchText
+                    : theme.colorScheme.onBackground,
+              ),
+            ),
           );
         },
       ),

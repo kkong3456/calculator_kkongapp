@@ -14,9 +14,12 @@ extension CustomeColorScheme on ColorScheme {
         begin: Alignment.bottomLeft,
         end: Alignment.topRight,
         colors: [
-          Color(0xffA430ff),
-          Color(0xfff318ad),
-          Color(0xffff2171),
+          // Color(0xffA430ff),
+          // Color(0xfff318ad),
+          // Color(0xffff2171),
+          Color.fromARGB(221, 153, 18, 243),
+          Color.fromARGB(221, 239, 92, 92),
+          Color.fromARGB(221, 218, 211, 228),
         ],
       );
   Color get grey1 => const Color(0xff171c22);
@@ -42,7 +45,7 @@ extension CustomeColorScheme on ColorScheme {
   Color get resultText => brightness == Brightness.light ? primary : grey7;
   Color get buttonText => brightness == Brightness.light ? grey2 : grey6;
   Color get opText => brightness == Brightness.light ? grey4 : grey5;
-  Color get switchText => brightness == Brightness.light ? grey5 : grey5;
+  Color get switchText => brightness == Brightness.light ? grey4 : grey5;
   Color get buttonBg => brightness == Brightness.light ? grey7 : grey1;
   Color get topButtonBg => brightness == Brightness.light ? grey6 : grey3;
 }
