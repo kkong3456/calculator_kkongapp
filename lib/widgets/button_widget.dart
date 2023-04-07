@@ -17,7 +17,7 @@ class Button extends StatelessWidget {
 
     return Expanded(
       child: Container(
-        margin: const EdgeInsets.all(3),
+        margin: const EdgeInsets.all(1),
         height: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
@@ -38,9 +38,12 @@ class Button extends StatelessWidget {
               borderRadius: BorderRadius.circular(5),
             ),
           ),
-          child: FittedBox(
-            child: getOnButtonWidget(text, context),
-          ),
+          child: text.length < 10
+              ? FittedBox(child: getOnButtonWidget(text, context))
+              : Container(
+                  padding: const EdgeInsets.all(0),
+                  child: getOnButtonWidget(text, context),
+                ),
         ),
       ),
     );

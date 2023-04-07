@@ -166,16 +166,18 @@ class HomeScreen extends StatelessWidget {
                             Expanded(
                               flex: 38,
                               child: CustomAnimatedSwitcher(
-                                grid: ButtonsGrid(grid: lGrid),
+                                grid: ButtonsGrid(grid: lGrid), //sin,asin
                               ),
                             ),
                             const Expanded(
                               flex: 30,
-                              child: ButtonsGrid(grid: AppConstant.grid),
+                              child:
+                                  ButtonsGrid(grid: AppConstant.grid), //0123..
                             ),
                             const Expanded(
                               flex: 10,
-                              child: ButtonsGrid(grid: AppConstant.opGrid),
+                              child:
+                                  ButtonsGrid(grid: AppConstant.opGrid), //+=*/
                             ),
                           ],
                         ),

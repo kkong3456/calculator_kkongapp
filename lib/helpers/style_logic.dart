@@ -79,6 +79,9 @@ Widget getOnButtonWidget(String text, BuildContext context) {
           ),
         ),
       );
+    case 'log10':
+      return Text(text,
+          style: textStyle.copyWith(fontSize: 15, letterSpacing: 1.1));
 
     default:
       return Text(text, style: textStyle);
