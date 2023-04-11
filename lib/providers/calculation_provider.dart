@@ -23,6 +23,14 @@ class Calculations with ChangeNotifier {
     return 23;
   }
 
+  int leftSizeFlex(int flex) {
+    return flex;
+  }
+
+  int rightSizeFlex(int flex) {
+    return flex;
+  }
+
   String get input => controller.text;
 
   String get result => _result;

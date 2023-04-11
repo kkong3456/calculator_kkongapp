@@ -149,7 +149,13 @@ class HomeScreen extends StatelessWidget {
                     Expanded(
                       child: Responsive(
                         portrait: Row(
-                          children: const [
+                          children: [
+                            Expanded(
+                              flex: 4,
+                              child: CustomAnimatedSwitcher(
+                                grid: ButtonsGrid(grid: lGrid),
+                              ),
+                            ),
                             Expanded(
                               flex: 3,
                               child: CustomAnimatedSwitcher(
