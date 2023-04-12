@@ -3,7 +3,7 @@
    <application
         android:label="화려한 계산기"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/kkongs_calc">
         <activity
             android:name=".MainActivity"
             android:exported="true"

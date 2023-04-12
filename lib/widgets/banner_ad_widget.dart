@@ -17,9 +17,8 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
   void initState() {
     super.initState();
 
-    final adUnitId = Platform.isIOS
-        ? 'ca-app-pub-3940256099942544/2934735716'
-        : 'ca-app-pub-3940256099942544/6300978111';
+    final adUnitId =
+        Platform.isIOS ? '' : 'ca-app-pub-9437455663881678/3092970492';
 
     banner = BannerAd(
       size: AdSize.banner,

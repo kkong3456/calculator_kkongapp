@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 1300)).then((value) =>
+    Future.delayed(const Duration(milliseconds: 3300)).then((value) =>
         Navigator.of(context).pushReplacement(
             CustomRoute(builder: ((context) => const HomeScreen()))));
   }
@@ -48,8 +48,9 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 5,
             ),
             Text(
-              'A fully functional calculator app\nmade using Flutter',
-              style: theme.textTheme.caption!.copyWith(fontSize: 14),
+              'Basically I used @aymendn\'s design'
+              'and his email is aymendnb@gmail.com.',
+              style: theme.textTheme.caption!.copyWith(fontSize: 16),
               textAlign: TextAlign.center,
             )
           ],
