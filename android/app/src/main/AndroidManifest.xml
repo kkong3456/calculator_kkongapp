@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.calculator_kkongapp">
+    package="com.cafe24.calculator_kkongapp">
    <application
-        android:label="calculator_kkongapp"
+        android:label="화려한 계산기"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
