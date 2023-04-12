@@ -1,5 +1,6 @@
 import 'package:calculator_kkongapp/providers/calculation_provider.dart';
 import 'package:calculator_kkongapp/providers/history_provider.dart';
+import 'package:calculator_kkongapp/widgets/banner_ad_widget.dart';
 import 'package:calculator_kkongapp/widgets/button_grid_widget.dart';
 import 'package:calculator_kkongapp/widgets/custom_icon_widget.dart';
 import 'package:calculator_kkongapp/widgets/custome_switch_widget.dart';
@@ -10,6 +11,7 @@ import 'package:calculator_kkongapp/widgets/responsive_widget.dart';
 import 'package:calculator_kkongapp/widgets/switch_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
 
 import '../core/index.dart';
@@ -190,6 +192,10 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: isLandscape ? 2 : 5),
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      child: BannerAdWidget(),
+                    )
                   ],
                 ),
               ),

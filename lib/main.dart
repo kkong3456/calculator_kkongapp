@@ -4,11 +4,15 @@ import 'package:calculator_kkongapp/providers/history_provider.dart';
 import 'package:calculator_kkongapp/providers/theme_provider.dart';
 import 'package:calculator_kkongapp/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  MobileAds.instance.initialize();
+
   final prefs = await SharedPreferences.getInstance();
   final isDarkMode = prefs.getBool('isDarkMode');
   late ThemeMode themeMode;
